@@ -9,6 +9,7 @@
         public long UtilisateurId { get; set; }
     }
     
+    
     public class TaskUpdateDto
     {
         public bool Completed { get; set; }

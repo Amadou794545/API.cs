@@ -47,7 +47,7 @@ namespace TP_CS.Controllers
             {
                 return BadRequest("Erreur lors de la création de la tâche.");
             }
-            return CreatedAtRoute("GetTaskById", new { id = createdTask.Data.Id }, createdTask.Data);
+            return CreatedAtRoute("GetTaskById", new { id = taskDto }, taskDto);
         }
         private Task MapToTask(TaskCreateDto taskDto)
         {
